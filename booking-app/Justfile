@@ -1,0 +1,11 @@
+TOPIC := "Available recipes for Booking App:\n"
+
+_default:
+    @just --list --unsorted --list-prefix "✨ " --list-heading '{{TOPIC}}'
+
+init-project:
+    go mod init booking-app
+
+run-app:
+    go mod tidy
+    go run .

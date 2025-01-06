@@ -1,0 +1,7 @@
+TOPIC := "Available recipes for CodeWars:\n"
+
+_default:
+    @just --list --unsorted --list-prefix "✨ " --list-heading '{{TOPIC}}'
+
+tests:
+    go test -v ./tests
