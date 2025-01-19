@@ -1,0 +1,13 @@
+TOPIC := "Available recipes for Playground:\n"
+
+_default:
+    @just --list --unsorted --list-prefix "✨ " --list-heading '{{TOPIC}}'
+
+
+# Pointer vs Value Receivers
+method_receivers:
+    go run method_receivers/main.go
+
+# Methods for nil Instances
+nil_methods:
+    go run nil_methods/main.go
