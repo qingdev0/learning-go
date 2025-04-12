@@ -9,3 +9,7 @@ commit:
     read -p "Enter commit message: " message
     git commit -m "$message"
     git push
+
+# Run slice examples with interactive selection
+slices:
+    @go run main.go types/slices
